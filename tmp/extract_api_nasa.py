@@ -20,9 +20,26 @@ if response.status_code == 200:
     response=json.loads(response)
     print(response)
     img = requests.get(response['url'])
-    filename = "imagen_descargada.jpg"
+    filename = "C:/Users/camilos/Desktop/ETL_Nasa_API/img/imagen.jpg"
+    archivo_json = "C:/Users/camilos/Desktop/ETL_Nasa_API/tmp/data.json"
     with open(filename, "wb") as file:
         file.write(img.content)
+    if not os.path.exists(archivo_json):
+        with open(archivo_json, "w", encoding="utf-8") as archivo:
+            json.dump({"items": []}, archivo, indent=4, ensure_ascii=False)
+
+# Leer el archivo JSON existente
+    with open(archivo_json, "r", encoding="utf-8") as archivo:
+        datos = json.load(archivo)
+
+# Agregar el nuevo objeto a la lista "items"
+    datos["items"].append(response)
+
+# Escribir los datos actualizados en el archivo JSON
+    with open(archivo_json, "w", encoding="utf-8") as archivo:
+        json.dump(datos, archivo, indent=4, ensure_ascii=False)
+
+    print(f"Nuevo objeto agregado al archivo {archivo_json}")
     
 else:
         print(f"Error: {response.status_code}")
