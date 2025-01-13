@@ -20,8 +20,8 @@ if response.status_code == 200:
     response=json.loads(response)
     print(response)
     img = requests.get(response['url'])
-    filename = "C:/Users/camilos/Desktop/ETL_Nasa_API/img/imagen.jpg"
-    archivo_json = "C:/Users/camilos/Desktop/ETL_Nasa_API/tmp/data.json"
+    filename = "C:/Users/USUARIO/Desktop/ETL_Nasa_API/img/imagen.jpg"
+    archivo_json = "C:/Users/USUARIO/Desktop/ETL_Nasa_API/tmp/data.json"
     with open(filename, "wb") as file:
         file.write(img.content)
     if not os.path.exists(archivo_json):
