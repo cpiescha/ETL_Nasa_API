@@ -22,8 +22,8 @@ if response.status_code == 200:
     response=json.loads(response)
     print(response)
     img = requests.get(response['url'])
-    filename = "/opt/airflow/img/imagen.jpg"
-    archivo_json = "/opt/airflow/tmp/data.json"
+    filename = '/opt/airflow/img/imagen.jpg'
+    archivo_json = '/opt/airflow/tmp/data.json'
     with open(filename, "wb") as file:
         file.write(img.content)
     if not os.path.exists(archivo_json):

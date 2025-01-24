@@ -7,6 +7,7 @@ from airflow.utils.dates import days_ago
 from airflow.providers.mongo.hooks.mongo import MongoHook
 from operators.mongodb_file_operator import MongoDBOperator
 from airflow.operators.python import PythonOperator
+import json
 # from operators import PostgresFileOperator
 
 #defining DAG arguments
@@ -23,8 +24,7 @@ default_args = {
      'retries': 1,
      'retry_delay': timedelta(minutes=5),
  }
-
-
+    
 def create_database_and_collection(mongo_conn_id, database_name, collection_name):
     # Conexión a MongoDB usando MongoHook
     hook = MongoHook(mongo_conn_id=mongo_conn_id)
@@ -71,7 +71,8 @@ insert_data = MongoDBOperator(
         database='etl_nasa',
         collection='etl_nasa',
         operation='insert',
-        data={'key': 'value'},
+        json_file_path='/opt/airflow/tmp/data.json'
+        
     )
  
 
