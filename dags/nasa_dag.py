@@ -25,19 +25,19 @@ default_args = {
      'retry_delay': timedelta(minutes=5),
  }
     
-def create_database_and_collection(mongo_conn_id, database_name, collection_name):
-    # Conexión a MongoDB usando MongoHook
-    hook = MongoHook(mongo_conn_id=mongo_conn_id)
-    client = hook.get_conn()
+# def create_database_and_collection(mongo_conn_id, database_name, collection_name):
+#     # Conexión a MongoDB usando MongoHook
+#     hook = MongoHook(mongo_conn_id=mongo_conn_id)
+#     client = hook.get_conn()
 
-    # Verificar si la colección existe
-    db = client[database_name]
-    if collection_name not in db.list_collection_names():
-        # Crear colección insertando un documento inicial
-        db[collection_name].insert_one({"message": "Initial document"})
-        print(f"Collection '{collection_name}' created in database '{database_name}'.")
-    else:
-        print(f"Collection '{collection_name}' already exists in database '{database_name}'.")
+#     # Verificar si la colección existe
+#     db = client[database_name]
+#     if collection_name not in db.list_collection_names():
+#         # Crear colección insertando un documento inicial
+#         db[collection_name].insert_one({"message": "Initial document"})
+#         print(f"Collection '{collection_name}' created in database '{database_name}'.")
+#     else:
+#         print(f"Collection '{collection_name}' already exists in database '{database_name}'.")
  # defining the DAG
  # define the DAG
 dag = DAG(
@@ -55,15 +55,15 @@ extract_data = BashOperator(
     dag=dag
 )
 
-create_database_task = PythonOperator(
-        task_id='create_database_and_collection',
-        python_callable=create_database_and_collection,
-        op_kwargs={
-            'mongo_conn_id': 'mongo_default',
-            'database_name': 'etl_nasa',
-            'collection_name': 'nasa_images'
-        }
-    )
+# create_database_task = PythonOperator(
+#         task_id='create_database_and_collection',
+#         python_callable=create_database_and_collection,
+#         op_kwargs={
+#             'mongo_conn_id': 'mongo_default',
+#             'database_name': 'etl_nasa',
+#             'collection_name': 'nasa_images'
+#         }
+#     )
 
 insert_data = MongoDBOperator(
         task_id='insert_data',
@@ -76,4 +76,4 @@ insert_data = MongoDBOperator(
     )
  
 
-extract_data
+extract_data >> insert_data

@@ -1,14 +1,24 @@
 {
     "items": [
         {
-            "copyright": "Mike Selby",
-            "date": "2025-01-23",
-            "explanation": "Point your telescope toward the high flying constellation Pegasus and you can find this cosmic expanse of Milky Way stars and distant galaxies. NGC 7814 is centered in the sharp field of view that would almost be covered by a full moon. NGC 7814 is sometimes called the Little Sombrero for its resemblance to the brighter more famous M104, the Sombrero Galaxy. Both Sombrero and Little Sombrero are spiral galaxies seen edge-on, and both have extensive halos and central bulges cut by a thin disk with thinner dust lanes in silhouette. In fact, NGC 7814 is some 40 million light-years away and an estimated 60,000 light-years across. That actually makes the Little Sombrero about the same physical size as its better known namesake, appearing smaller and fainter only because it is farther away.",
-            "hdurl": "https://apod.nasa.gov/apod/image/2501/NGC_7814_LRGB_crop-rev-1.jpg",
+            "copyright": "\nMauricio Salazar\n",
+            "date": "2025-01-28",
+            "explanation": "Comets can be huge. When far from the Sun, a comet's size usually refers to its hard nucleus of ice and rock, which typically spans a few kilometers -- smaller than even a small moon. When nearing the Sun, however, this nucleus can eject dust and gas and leave a thin tail that can spread to an enormous length -- even greater than the distance between the Earth and the Sun. Pictured, C/2024 G3 (ATLAS) sports a tail of sunlight-reflecting dust and glowing gas that spans several times the apparent size of a full moon, appearing even larger on long duration camera images than to the unaided eye. The featured image shows impressive Comet ATLAS over trees and a grass field in Sierras de Mahoma, San Jose, Uruguay about a week ago.  After being prominent in the sunset skies of Earth's southern hemisphere, Comet G3 ATLAS is now fading as it moves away from the Sun, making its impressive tails increasingly hard to see.    Gallery: Comet ATLAS (G3)",
+            "hdurl": "https://apod.nasa.gov/apod/image/2501/AtlasFields_Salazar_3214.jpg",
             "media_type": "image",
             "service_version": "v1",
-            "title": "NGC 7814: Little Sombrero",
-            "url": "https://apod.nasa.gov/apod/image/2501/NGC_7814_crop-rev-1_1024.jpg"
+            "title": "Comet G3 ATLAS over Uruguay",
+            "url": "https://apod.nasa.gov/apod/image/2501/AtlasFields_Salazar_1080.jpg"
+        },
+        {
+            "copyright": "\nMauricio Salazar\n",
+            "date": "2025-01-28",
+            "explanation": "Comets can be huge. When far from the Sun, a comet's size usually refers to its hard nucleus of ice and rock, which typically spans a few kilometers -- smaller than even a small moon. When nearing the Sun, however, this nucleus can eject dust and gas and leave a thin tail that can spread to an enormous length -- even greater than the distance between the Earth and the Sun. Pictured, C/2024 G3 (ATLAS) sports a tail of sunlight-reflecting dust and glowing gas that spans several times the apparent size of a full moon, appearing even larger on long duration camera images than to the unaided eye. The featured image shows impressive Comet ATLAS over trees and a grass field in Sierras de Mahoma, San Jose, Uruguay about a week ago.  After being prominent in the sunset skies of Earth's southern hemisphere, Comet G3 ATLAS is now fading as it moves away from the Sun, making its impressive tails increasingly hard to see.    Gallery: Comet ATLAS (G3)",
+            "hdurl": "https://apod.nasa.gov/apod/image/2501/AtlasFields_Salazar_3214.jpg",
+            "media_type": "image",
+            "service_version": "v1",
+            "title": "Comet G3 ATLAS over Uruguay",
+            "url": "https://apod.nasa.gov/apod/image/2501/AtlasFields_Salazar_1080.jpg"
         }
     ]
 }

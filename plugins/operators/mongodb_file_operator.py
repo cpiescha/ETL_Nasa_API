@@ -2,6 +2,7 @@ from airflow.models import BaseOperator
 from airflow.utils.decorators import apply_defaults
 from pymongo import MongoClient
 import json
+import time
 
 class MongoDBOperator(BaseOperator):
     
@@ -9,8 +10,6 @@ class MongoDBOperator(BaseOperator):
     @apply_defaults
     def __init__(self, mongo_conn_id: str, database: str, collection: str, operation: str,json_file_path=None, data=None, query=None, **kwargs):
         
-        with open("/opt/airflow/tmp/data.json", 'r') as file:
-            data = json.load(file)
             
         super().__init__(**kwargs)
         self.mongo_conn_id = mongo_conn_id
@@ -23,7 +22,6 @@ class MongoDBOperator(BaseOperator):
 
     def execute(self, context):
         from airflow.hooks.base import BaseHook
-        
         if self.json_file_path:
             try:
                 with open(self.json_file_path, 'r') as file:
