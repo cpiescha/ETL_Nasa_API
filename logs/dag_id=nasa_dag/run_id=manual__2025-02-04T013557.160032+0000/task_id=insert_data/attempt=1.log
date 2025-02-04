@@ -1,0 +1,21 @@
+[2025-02-04T01:36:05.553+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-04T01:36:05.566+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nasa_dag.insert_data manual__2025-02-04T01:35:57.160032+00:00 [queued]>
+[2025-02-04T01:36:05.573+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nasa_dag.insert_data manual__2025-02-04T01:35:57.160032+00:00 [queued]>
+[2025-02-04T01:36:05.574+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-02-04T01:36:05.583+0000] {taskinstance.py:2888} INFO - Executing <Task(MongoDBOperator): insert_data> on 2025-02-04 01:35:57.160032+00:00
+[2025-02-04T01:36:05.588+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=81) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-04T01:36:05.589+0000] {standard_task_runner.py:72} INFO - Started process 82 to run task
+[2025-02-04T01:36:05.589+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'nasa_dag', 'insert_data', 'manual__2025-02-04T01:35:57.160032+00:00', '--job-id', '275', '--raw', '--subdir', 'DAGS_FOLDER/nasa_dag.py', '--cfg-path', '/tmp/tmpm03cv217']
+[2025-02-04T01:36:05.590+0000] {standard_task_runner.py:105} INFO - Job 275: Subtask insert_data
+[2025-02-04T01:36:05.626+0000] {task_command.py:467} INFO - Running <TaskInstance: nasa_dag.insert_data manual__2025-02-04T01:35:57.160032+00:00 [running]> on host fbf16bed15ba
+[2025-02-04T01:36:05.684+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='nasa_dag' AIRFLOW_CTX_TASK_ID='insert_data' AIRFLOW_CTX_EXECUTION_DATE='2025-02-04T01:35:57.160032+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-04T01:35:57.160032+00:00'
+[2025-02-04T01:36:05.685+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-04T01:36:05.701+0000] {base.py:84} INFO - Retrieving connection 'mongo_default'
+[2025-02-04T01:36:05.732+0000] {mongodb_file_operator.py:63} INFO - Inserted document ID: 67a16f0507d30b245286e073
+[2025-02-04T01:36:05.744+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-04T01:36:05.745+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=nasa_dag, task_id=insert_data, run_id=manual__2025-02-04T01:35:57.160032+00:00, execution_date=20250204T013557, start_date=20250204T013605, end_date=20250204T013605
+[2025-02-04T01:36:05.764+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-04T01:36:05.776+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-04T01:36:05.778+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
