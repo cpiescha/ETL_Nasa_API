@@ -1611,3 +1611,641 @@ File Path                        PID  Runtime      # DAGs    # Errors  Last Runt
 /opt/airflow/dags/nasa_dag.py    105  0.00s             1           0  0.10s           2025-01-29T00:06:05                      12
 ================================================================================
 [2025-01-29T00:07:01.020+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-01-30T00:24:46.873+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-01-30T00:24:46.875+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-01-30T00:24:46.875+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-01-30T00:24:46.876+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-30T00:24:46.922+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-01-30T00:24:47.016+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     61  0.03s             0           0                                                   0
+================================================================================
+[2025-01-30T00:25:17.414+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py                           1           0  0.56s           2025-01-30T00:24:47                      34
+================================================================================
+[2025-01-30T00:25:47.975+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     75  0.00s             1           0  0.12s           2025-01-30T00:25:17                      12
+================================================================================
+[2025-01-30T00:25:56.892+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-01-30T01:40:55.985+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-01-30T01:40:55.986+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-01-30T01:40:55.986+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-01-30T01:40:55.987+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-30T01:40:56.012+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-01-30T01:40:56.101+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     50  0.02s             0           0                                                   0
+================================================================================
+[2025-01-30T01:41:26.520+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     57  0.00s             1           0  0.27s           2025-01-30T01:40:56                      12
+================================================================================
+[2025-01-30T01:41:56.860+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     64  0.00s             1           0  0.11s           2025-01-30T01:41:26                      12
+================================================================================
+[2025-01-30T01:42:27.246+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     71  0.00s             1           0  0.12s           2025-01-30T01:41:56                      12
+================================================================================
+[2025-01-30T01:42:57.543+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     84  0.00s             1           0  0.12s           2025-01-30T01:42:27                      12
+================================================================================
+[2025-01-30T01:43:27.962+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     91  0.00s             1           0  0.12s           2025-01-30T01:42:57                      12
+================================================================================
+[2025-01-30T01:43:58.255+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     98  0.00s             1           0  0.11s           2025-01-30T01:43:28                      12
+================================================================================
+[2025-01-30T01:44:28.650+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py    105  0.00s             1           0  0.11s           2025-01-30T01:43:58                      12
+================================================================================
+[2025-01-30T01:44:58.964+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py    112  0.00s             1           0  0.16s           2025-01-30T01:44:28                      12
+================================================================================
+[2025-01-30T01:45:09.575+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-01-30T01:58:04.289+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-01-30T01:58:04.290+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-01-30T01:58:04.290+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-01-30T01:58:04.291+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-30T01:58:04.311+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-01-30T01:58:04.397+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     50  0.03s             0           0                                                   0
+================================================================================
+[2025-01-30T01:58:34.785+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     58  0.00s             1           0  0.35s           2025-01-30T01:58:04                      12
+================================================================================
+[2025-01-30T01:59:05.034+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     65  0.00s             1           0  0.10s           2025-01-30T01:58:34                      12
+================================================================================
+[2025-01-30T01:59:35.389+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     73  0.00s             1           0  0.10s           2025-01-30T01:59:05                      12
+================================================================================
+[2025-01-30T02:00:05.733+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     80  0.00s             1           0  0.10s           2025-01-30T01:59:35                      12
+================================================================================
+[2025-01-30T02:00:36.080+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     93  0.00s             1           0  0.13s           2025-01-30T02:00:05                      12
+================================================================================
+[2025-01-30T02:01:06.476+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py    100  0.00s             1           0  0.11s           2025-01-30T02:00:36                      12
+================================================================================
+[2025-01-30T02:01:09.911+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-01-30T02:20:24.135+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-01-30T02:20:24.136+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-01-30T02:20:24.136+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-01-30T02:20:24.137+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-30T02:20:24.165+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-01-30T02:20:24.247+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     50  0.02s             0           0                                                   0
+================================================================================
+[2025-01-30T02:20:54.531+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py                           1           0  0.42s           2025-01-30T02:20:24                      34
+================================================================================
+[2025-01-30T02:21:25.395+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     71  0.00s             1           0  0.14s           2025-01-30T02:20:55                      12
+================================================================================
+[2025-01-30T02:21:55.747+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     78  0.00s             1           0  0.11s           2025-01-30T02:21:25                      12
+================================================================================
+[2025-01-30T02:22:26.060+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     85  0.00s             1           0  0.10s           2025-01-30T02:21:55                      12
+================================================================================
+[2025-01-30T02:22:56.390+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     91  0.00s             1           0  0.13s           2025-01-30T02:22:26                      12
+================================================================================
+[2025-01-30T02:23:26.680+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     98  0.00s             1           0  0.10s           2025-01-30T02:22:56                      12
+================================================================================
+[2025-01-30T02:23:30.715+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-01-30T02:26:35.805+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-01-30T02:26:35.806+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-01-30T02:26:35.807+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-01-30T02:26:35.808+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-30T02:26:35.846+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-01-30T02:26:35.921+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     50  0.02s             0           0                                                   0
+================================================================================
+[2025-01-30T02:27:06.214+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     57  0.00s             1           0  0.28s           2025-01-30T02:26:36                      12
+================================================================================
+[2025-01-30T02:27:36.515+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     64  0.00s             1           0  0.11s           2025-01-30T02:27:06                      12
+================================================================================
+[2025-01-30T02:27:38.642+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-01-30T02:41:03.814+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-01-30T02:41:03.815+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-01-30T02:41:03.816+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-01-30T02:41:03.816+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-30T02:41:03.848+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-01-30T02:41:03.926+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     51  0.03s             0           0                                                   0
+================================================================================
+[2025-01-30T02:41:34.337+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     58  0.00s             0           1  0.12s           2025-01-30T02:41:04                       3
+================================================================================
+[2025-01-30T02:42:04.622+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     64  0.00s             0           1  0.06s           2025-01-30T02:41:34                       5
+================================================================================
+[2025-01-30T02:42:18.057+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-01-30T02:43:05.810+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-01-30T02:43:05.811+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-01-30T02:43:05.812+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-01-30T02:43:05.814+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-30T02:43:05.846+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-01-30T02:43:05.940+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     50  0.03s             0           0                                                   0
+================================================================================
+[2025-01-30T02:43:36.360+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     57  0.00s             1           0  0.43s           2025-01-30T02:43:06                      34
+================================================================================
+[2025-01-30T02:44:06.691+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     64  0.00s             1           0  0.12s           2025-01-30T02:43:36                      12
+================================================================================
+[2025-01-30T02:44:37.064+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     72  0.00s             1           0  0.10s           2025-01-30T02:44:06                      12
+================================================================================
+[2025-01-30T02:44:47.772+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-01-30T02:47:18.629+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-01-30T02:47:18.630+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-01-30T02:47:18.630+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-01-30T02:47:18.631+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-01-30T02:47:18.646+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-01-30T02:47:18.727+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     50  0.02s             0           0                                                   0
+================================================================================
+[2025-01-30T02:47:49.163+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     57  0.00s             1           0  0.37s           2025-01-30T02:47:19                      12
+================================================================================
+[2025-01-30T02:48:19.468+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     64  0.00s             1           0  0.10s           2025-01-30T02:47:49                      12
+================================================================================
+[2025-01-30T02:48:44.284+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-03T23:42:31.230+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-02-03T23:42:31.232+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-02-03T23:42:31.233+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-02-03T23:42:31.234+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-03T23:42:31.328+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-02-03T23:42:31.429+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     56  0.03s             0           0                                                   0
+================================================================================
+[2025-02-03T23:43:01.882+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py                           1           0  0.52s           2025-02-03T23:42:31                      34
+================================================================================
+[2025-02-03T23:43:32.385+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     70  0.01s             1           0  0.15s           2025-02-03T23:43:02                      12
+================================================================================
+[2025-02-03T23:43:32.658+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-03T23:43:32.658+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-03T23:43:33.041+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-03T23:45:18.555+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-02-03T23:45:18.556+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-02-03T23:45:18.557+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-02-03T23:45:18.558+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-03T23:45:18.621+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-02-03T23:45:18.727+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     56  0.03s             0           0                                                   0
+================================================================================
+[2025-02-03T23:45:49.217+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     63  0.00s             1           0  0.32s           2025-02-03T23:45:19                      12
+================================================================================
+[2025-02-03T23:46:19.720+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     71  0.00s             1           0  0.17s           2025-02-03T23:45:49                      12
+================================================================================
+[2025-02-03T23:46:50.065+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     84  0.00s             1           0  0.14s           2025-02-03T23:46:19                      12
+================================================================================
+[2025-02-03T23:47:20.525+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     91  0.00s             1           0  0.23s           2025-02-03T23:46:50                      12
+================================================================================
+[2025-02-03T23:47:51.013+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     98  0.00s             1           0  0.20s           2025-02-03T23:47:20                      12
+================================================================================
+[2025-02-03T23:48:21.408+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py    105  0.00s             1           0  0.20s           2025-02-03T23:47:51                      12
+================================================================================
+[2025-02-03T23:48:51.974+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py    112  0.00s             1           0  0.16s           2025-02-03T23:48:21                      12
+================================================================================
+[2025-02-03T23:48:54.396+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-04T00:00:14.742+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-02-04T00:00:14.744+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-02-04T00:00:14.746+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-02-04T00:00:14.748+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-04T00:00:14.821+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-02-04T00:00:14.955+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     62  0.03s             0           0                                                   0
+================================================================================
+[2025-02-04T00:00:45.541+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py                           1           0  0.79s           2025-02-04T00:00:15                      34
+================================================================================
+[2025-02-04T00:01:16.378+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     77  0.00s             1           0  0.14s           2025-02-04T00:00:46                      12
+================================================================================
+[2025-02-04T00:01:46.814+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     84  0.00s             1           0  0.19s           2025-02-04T00:01:16                      12
+================================================================================
+[2025-02-04T00:02:17.266+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     91  0.00s             1           0  0.19s           2025-02-04T00:01:47                      12
+================================================================================
+[2025-02-04T00:02:47.714+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     98  0.01s             0           1  0.09s           2025-02-04T00:02:17                       3
+================================================================================
+[2025-02-04T00:03:09.672+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-04T00:04:07.523+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-02-04T00:04:07.524+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-02-04T00:04:07.524+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-02-04T00:04:07.525+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-04T00:04:07.578+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-02-04T00:04:07.659+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     50  0.02s             0           0                                                   0
+================================================================================
+[2025-02-04T00:04:38.155+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     57  0.01s             1           0  0.32s           2025-02-04T00:04:07                      12
+================================================================================
+[2025-02-04T00:05:08.689+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     70  0.00s             1           0  0.21s           2025-02-04T00:04:38                      12
+================================================================================
+[2025-02-04T00:05:39.045+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     77  0.00s             1           0  0.20s           2025-02-04T00:05:08                      12
+================================================================================
+[2025-02-04T00:06:09.562+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     84  0.00s             1           0  0.16s           2025-02-04T00:05:39                      12
+================================================================================
+[2025-02-04T00:06:22.593+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-04T00:08:00.776+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-02-04T00:08:00.778+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-02-04T00:08:00.779+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-02-04T00:08:00.781+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-04T00:08:00.820+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-02-04T00:08:00.926+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     56  0.03s             0           0                                                   0
+================================================================================
+[2025-02-04T00:08:31.387+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     62  0.00s             1           0  0.37s           2025-02-04T00:08:01                      12
+================================================================================
+[2025-02-04T00:09:01.758+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py     68  0.00s             1           0  0.17s           2025-02-04T00:08:31                      12
+================================================================================
+[2025-02-04T00:09:23.825+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-04T00:40:54.976+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-02-04T00:40:54.977+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-02-04T00:40:54.979+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-02-04T00:40:54.980+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-02-04T00:40:55.050+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-02-04T00:40:55.153+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/nasa_dag.py     69  0.03s             0           0                                                   0
+================================================================================
+[2025-02-04T00:41:25.163+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py                           1           0  0.40s           2025-02-04T00:40:55                      12
+================================================================================
+[2025-02-04T00:41:55.276+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py                           1           0  0.14s           2025-02-04T00:41:26                      12
+================================================================================
+[2025-02-04T00:42:25.640+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py                           1           0  0.14s           2025-02-04T00:41:56                      12
+================================================================================
+[2025-02-04T00:42:56.154+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-----------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/nasa_dag.py                           1           0  0.14s           2025-02-04T00:42:26                      12
+================================================================================
+[2025-02-04T00:43:12.027+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15

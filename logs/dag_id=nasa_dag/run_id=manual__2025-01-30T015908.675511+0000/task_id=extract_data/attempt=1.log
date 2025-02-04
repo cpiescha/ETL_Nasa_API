@@ -1,0 +1,25 @@
+[2025-01-30T01:59:09.449+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-30T01:59:09.463+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: nasa_dag.extract_data manual__2025-01-30T01:59:08.675511+00:00 [queued]>
+[2025-01-30T01:59:09.471+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: nasa_dag.extract_data manual__2025-01-30T01:59:08.675511+00:00 [queued]>
+[2025-01-30T01:59:09.472+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2025-01-30T01:59:09.481+0000] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): extract_data> on 2025-01-30 01:59:08.675511+00:00
+[2025-01-30T01:59:09.486+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=89) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-01-30T01:59:09.488+0000] {standard_task_runner.py:72} INFO - Started process 90 to run task
+[2025-01-30T01:59:09.488+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'nasa_dag', 'extract_data', 'manual__2025-01-30T01:59:08.675511+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/nasa_dag.py', '--cfg-path', '/tmp/tmpyy9vkxd1']
+[2025-01-30T01:59:09.489+0000] {standard_task_runner.py:105} INFO - Job 201: Subtask extract_data
+[2025-01-30T01:59:09.523+0000] {task_command.py:467} INFO - Running <TaskInstance: nasa_dag.extract_data manual__2025-01-30T01:59:08.675511+00:00 [running]> on host fbf16bed15ba
+[2025-01-30T01:59:09.593+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='milo0@gmail.com' AIRFLOW_CTX_DAG_OWNER='camilo' AIRFLOW_CTX_DAG_ID='nasa_dag' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2025-01-30T01:59:08.675511+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-30T01:59:08.675511+00:00'
+[2025-01-30T01:59:09.594+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-30T01:59:09.605+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-01-30T01:59:09.606+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/tmp/extract_api_nasa.py']
+[2025-01-30T01:59:09.612+0000] {subprocess.py:86} INFO - Output:
+[2025-01-30T01:59:11.735+0000] {subprocess.py:93} INFO - {'date': '2025-01-29', 'explanation': 'What are those strange rings? Rich in dust, the rings are likely 3D shells -- but how they were created remains a topic of research.  Where they were created is well known: in a binary star system that lies about 6,000 light years away toward the constellation of the Swan (Cygnus) -- a system dominated by the Wolf-Rayet star WR 140.  Wolf-Rayet stars are massive, bright, and known for their tumultuous winds. They are also known for creating and dispersing heavy elements such as carbon, which is a building block of interstellar dust. The other star in the binary is also bright and massive -- but not as active.  The two great stars joust in an oblong orbit as they approach each other about every eight years. When at closest approach, the X-ray emission from the system increases, as, apparently, does the dust expelled into space -- creating another shell.  The featured infrared image by the Webb Space Telescope resolves greater details and more dust shells than ever before. Images taken over consecutive years show the shells moving outward.', 'hdurl': 'https://apod.nasa.gov/apod/image/2501/Wr140Rings_Webb_960_2023.jpg', 'media_type': 'image', 'service_version': 'v1', 'title': 'Dust Shells around WR 140 from Webb', 'url': 'https://apod.nasa.gov/apod/image/2501/Wr140Rings_Webb_960_2023.jpg'}
+[2025-01-30T01:59:11.735+0000] {subprocess.py:93} INFO - Nuevo objeto agregado al archivo /opt/***/tmp/data.json
+[2025-01-30T01:59:11.773+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-01-30T01:59:11.791+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-30T01:59:11.791+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=nasa_dag, task_id=extract_data, run_id=manual__2025-01-30T01:59:08.675511+00:00, execution_date=20250130T015908, start_date=20250130T015909, end_date=20250130T015911
+[2025-01-30T01:59:11.837+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-01-30T01:59:11.851+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-01-30T01:59:11.853+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
