@@ -1,13 +1,38 @@
-# Usar la imagen base de Airflow
 FROM apache/airflow:2.10.2
 
-# Establecer el directorio de trabajo
-WORKDIR /opt/airflow
+# Crear carpetas dentro del contenedor
+USER root
+RUN mkdir -p /opt/airflow/img && \
+    mkdir -p /opt/airflow/tmp && \
+    chown -R airflow:0 /opt/airflow/img /opt/airflow/tmp  # Permisos para el usuario airflow
 
-# Instalar librerías adicionales
-COPY requirements.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-RUN airflow db init
+# Configuración de Airflow
+ENV AIRFLOW_HOME=/opt/airflow
+ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
+ENV AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION='false'
+ENV AIRFLOW__CORE__LOAD_EXAMPLES='false'
+ENV AIRFLOW__CORE__SQL_ALCHEMY_CONN = postgresql+psycopg2://postgres:wOCWPTrwqRsmyaoQOuKLwVmUwPfVpocB@containers-us-west-100.railway.app:6500/railway
 
-# Establecer el comando para ejecutar el scheduler y webserver
-CMD ["sh", "-c", "airflow scheduler & airflow webserver --port 8080"]
+# Instalar dependencias (ejemplo)
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libpq-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copiar DAGs, plugins y configuraciones
+COPY ./dags/ ${AIRFLOW_HOME}/dags/
+COPY ./plugins/ ${AIRFLOW_HOME}/plugins/
+
+# Volver al usuario airflow
+USER airflow
+RUN pip install --upgrade pip && pip install psycopg2-binary
+
+# Comando de inicio
+CMD airflow db init && \
+    airflow users create \
+    --username admin \
+    --password admin \
+    --firstname Admin \
+    --lastname User \
+    --role Admin \
+    --email admin@example.com && \
+    (airflow scheduler & airflow webserver --port 8080)
