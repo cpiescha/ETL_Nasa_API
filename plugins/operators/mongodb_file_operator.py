@@ -20,15 +20,29 @@ class MongoDBOperator(BaseOperator):
         from airflow.hooks.base import BaseHook
         connection = BaseHook.get_connection(self.mongo_conn_id)
         
-        # Establecer conexión con MongoDB
-        client = MongoClient(
-            host=connection.host,
-            port=connection.port,
-            username=connection.login,
-            password=connection.password
-        )
+        # Recuperar parámetros extra (si existen) para determinar si usamos SRV
+        extra = connection.extra_dejson
+        srv = extra.get("srv", False)
+        tls = extra.get("tls", False)
 
-        db = client[self.database]
+        user = connection.login
+        password = connection.password
+        host = connection.host
+        schema = self.database  # O connection.schema si lo configuraste así
+
+        if srv:
+            # Construir URI para clúster SRV
+            uri = f"mongodb+srv://{user}:{password}@{host}/{schema}?retryWrites=true&w=majority"
+        else:
+            # Construir URI convencional
+            port = connection.port or 27017
+            uri = f"mongodb://{user}:{password}@{host}:{port}/{schema}"
+
+        self.log.info(f"Connecting to MongoDB with URI: {uri}")
+        
+        # Crear el cliente de MongoDB
+        client = MongoClient(uri)
+        db = client[schema]
 
         if self.operation == 'create_collection':
             if self.collection not in db.list_collection_names():

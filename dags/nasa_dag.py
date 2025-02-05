@@ -45,8 +45,8 @@ extract_data = BashOperator(
 create_database = MongoDBOperator(
         task_id='create_data',
         mongo_conn_id='mongo_default',
-        database='etl_nasa',
-        collection='etl_nasa',
+        database='etlprocess',
+        collection='nasa',
         operation='create_collection',
         
     )
@@ -55,7 +55,7 @@ insert_data = MongoDBOperator(
         task_id='insert_data',
         mongo_conn_id='mongo_default',
         database='etl_nasa',
-        collection='etl_nasa',
+        collection='nasa',
         operation='insert',
         json_file_path='/opt/airflow/tmp/data.json'
         
