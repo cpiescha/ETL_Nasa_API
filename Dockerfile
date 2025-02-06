@@ -5,7 +5,7 @@ USER root
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libpq-dev && \
     rm -rf /var/lib/apt/lists/*
-RUN pip install --upgrade pip && pip install psycopg2-binary
+
 
 RUN mkdir -p /opt/airflow/img && \
     mkdir -p /opt/airflow/tmp && \
@@ -32,7 +32,7 @@ COPY ./plugins/ ${AIRFLOW_HOME}/plugins/
 
 # Volver al usuario airflow
 USER airflow
-
+RUN pip install --upgrade pip && pip install psycopg2-binary
 
 # Comando de inicio
 CMD airflow db init && \
