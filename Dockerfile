@@ -2,6 +2,10 @@ FROM apache/airflow:2.10.2
 
 # Crear carpetas dentro del contenedor
 USER root
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libpq-dev && \
+    rm -rf /var/lib/apt/lists/*
+    
 RUN mkdir -p /opt/airflow/img && \
     mkdir -p /opt/airflow/tmp && \
     chown -R airflow:0 /opt/airflow/img /opt/airflow/tmp  # Permisos para el usuario airflow
