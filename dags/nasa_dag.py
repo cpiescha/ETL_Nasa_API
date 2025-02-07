@@ -21,7 +21,6 @@ default_args = {
      'email': ['milo0@gmail.com'],
      'email_on_failure': False,
      'email_on_retry': False,
-     'start_date': datetime(2024, 2, 6),
      'retries': 1,
      'retry_delay': timedelta(minutes=5),
  }
@@ -31,7 +30,7 @@ default_args = {
 dag = DAG(
      dag_id='nasa_dag',
      default_args=default_args,
-     schedule_interval='0 6 * * *',
+     schedule_interval='@hourly',
      catchup=False,
      max_active_runs=1,
      concurrency=1
